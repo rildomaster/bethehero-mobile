@@ -41,7 +41,7 @@ export default function Incidents() {
             setLoading(false);
             
         } catch (error) {
-            alert(`erro ao carregar os casos.\n${error.response.data.erro}`);
+            alert(`erro ao carregar os casos.\n${error.response.data.message}`);
             setLoading(false);
         }
     }
